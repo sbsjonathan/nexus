@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Esquemático</title>
+<link rel="stylesheet" href="schematic-viewer.css?v=95ce93e28e">
+<link rel="icon" type="image/svg+xml" href="nexo-board.svg">
+<link rel="alternate icon" href="nexo-board.ico">
+</head>
+<body>
+<header class="viewer-heading"><strong id="viewerTitle">Esquemático</strong><button id="dockViewer" hidden title="Encaixar na barra de ferramentas">Acoplar</button></header>
+<div class="viewer-source"><select id="viewerDocument" aria-label="Escolher documento"></select></div>
+<form id="componentSearch" class="search-bar" role="search">
+ <input id="componentQuery" aria-label="Buscar componente no esquema" placeholder="Buscar componente…" autocomplete="off" spellcheck="false" title="Digite o componente e aperte Enter">
+ <label class="exact-search" title="Desmarque para buscar parte do nome"><input type="checkbox" id="searchExact" checked>Exata</label>
+ <select id="occurrences" aria-label="Ocorrências do componente" disabled><option>Ocorrências</option></select>
+</form>
+<nav class="viewer-toolbar" aria-label="Controles do esquemático">
+ <div class="control-group"><button id="previousPage" title="Página anterior" aria-label="Página anterior">‹</button><label class="page-field"><input id="pageNumber" type="number" min="1" max="1" value="1" aria-label="Ir à página"><span id="pageTotal">/ —</span></label><button id="nextPage" title="Próxima página" aria-label="Próxima página">›</button></div>
+ <button id="fitDocument" title="Ajustar à largura disponível" aria-pressed="true">Ajustar</button>
+ <button id="focusRegion" title="Voltar ao componente selecionado" disabled>Localizar</button>
+ <a id="originalPdf" target="_blank" rel="noopener" title="Abrir PDF original">PDF</a>
+</nav>
+<main id="pageViewer" tabindex="0" aria-label="Páginas contínuas do esquemático"><div id="pageStack"></div></main>
+<footer class="viewer-status"><span id="viewerStatus" role="status">Abrindo esquemático…</span><span class="viewer-hint">Roda: zoom · arraste para mover</span></footer>
+<script src="schematics.js?v=10631c23a8"></script><script src="nexus-bridge.js"></script><script src="pdf-pages.js?v=5b38f9f313"></script><script src="schematic-viewer.js?v=26047ccb0f"></script>
+</body>
+</html>

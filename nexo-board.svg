@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Nexo Board</title>
+  <desc id="desc">Monograma N em ciano, com duas conexões circulares e um ponto âmbar, sobre fundo azul-noite arredondado.</desc>
+  <defs>
+    <linearGradient id="background" x1="28" y1="12" x2="224" y2="244" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#15394F"/>
+      <stop offset="1" stop-color="#071822"/>
+    </linearGradient>
+    <linearGradient id="connection" x1="62" y1="70" x2="195" y2="186" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A7F9FC"/>
+      <stop offset="0.48" stop-color="#57E6ED"/>
+      <stop offset="1" stop-color="#29CADB"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="54" fill="url(#background)"/>
+  <rect x="9" y="9" width="238" height="238" rx="53" fill="none" stroke="#A7F9FC" stroke-opacity="0.12" stroke-width="2"/>
+  <path d="M76 180V76L180 180V76" fill="none" stroke="url(#connection)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="76" cy="76" r="19" fill="url(#connection)"/>
+  <circle cx="180" cy="180" r="19" fill="url(#connection)"/>
+  <circle cx="76" cy="76" r="6" fill="#123449"/>
+  <circle cx="180" cy="180" r="6" fill="#0A1F2C"/>
+  <circle cx="205" cy="51" r="9" fill="#FFBC5C"/>
+</svg>
